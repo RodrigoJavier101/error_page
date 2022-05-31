@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="./boots.css">
-    <title>Error page</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./boots.css"> -->
+    <title>error page</title>
 </head>
 <style>
     .missing-body {
+        box-sizing: border-box;
         position: absolute;
         width: 100vw;
         height: 100%;
         margin: 0;
         padding: 0;
-        /* background-color: lightblue; */
-        background: url('slider-01.jpg');
+        background-color: lightblue;
+        /* background: url('./slider-01.jpg'); */
         /* background-attachment: fixed; */
         background-repeat: no-repeat;
         background-position: center;
@@ -32,7 +33,7 @@
         flex-direction: column;
         justify-content: flex-start;
         padding: 2rem;
-        background-color: #6f4d0e;
+        background-color: #e3df16;
         color: #fff;
         top: 45%;
         left: 50%;
@@ -58,6 +59,25 @@
         font-size: 35px;
         color: rgb(24, 20, 20);
     }
+
+    .buttonRedirect {
+        background-color: rgb(26, 98, 199);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .buttonRedirect:hover {
+        background-color: rgb(117, 140, 172);
+        border: solid 0.5px white;
+        color: black;
+
+    }
 </style>
 
 <body class="missing-body">
@@ -66,7 +86,7 @@
     <article class="missing-article">
         <h1 class="title_missing">Oops!</h1>
         <p class="sub_title_missing">Error in reload page.</p>
-        <a class="btn btn-danger" href="http://181.212.18.51">Please, loggin again</a>
+        <a class="buttonRedirect" href="http://181.212.18.51">Please, login again...</a>
     </article>
     <!-- </div> -->
 </body>

@@ -1,0 +1,7 @@
+server_name antoinette.cl;
+
+error_page 404 = /404.html;
+  location = /404.html{
+    root /var/www/error;
+    internal;
+ }
